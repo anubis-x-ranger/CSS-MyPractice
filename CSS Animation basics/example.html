@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS 2D transform Methods</title>
+    <style>
+      div {
+        width: 300px;
+        height: 100px;
+        background-color: brown;
+        border: 1px solid black;
+      }
+      /* translate(X,Y)   */
+      div.m-1 {
+        transform: translate(50px, 300px);
+        background-color: aqua;
+      }
+
+      /* rotate(angle in deg)  */
+      div.m-2 {
+        transform: rotate(20deg);
+        background-color: pink;
+      }
+      /* scaleX()  */
+      div.m-3 {
+        transform: scaleX(0.82);
+        background-color: #23ff43;
+        margin: auto;
+      }
+      /* scaleY()  */
+      div.m-4 {
+        transform: scaleY(0.82);
+        background-color: #235eff;
+        margin: auto;
+      }
+      /* scale()  */
+      div.m-5 {
+        transform: scale(0.5, 0.5);
+        background-color: #fff023;
+      }
+      /* skewX() */
+      div.m-6 {
+        transform: skewX(20deg);
+        background-color: #69a101;
+        margin: auto;
+      }
+      /* skewY() */
+      div.m-7 {
+        transform: skewY(20deg);
+        background-color: #f02ecf;
+        margin: auto;
+      }
+      /* skew()  */
+      div.m-8 {
+        transform: skew(10deg, 10deg);
+        background-color: #f02ecf;
+        margin: auto;
+      }
+      /* matrix()  */
+      div.m-9 {
+        transform: matrix(1, -0.3, 0, 1, 0, 0);
+        background-color: #f02e2e;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div>this is a normal div</div>
+    <!-- translate() -->
+    <div class="m-1">this is translate</div>
+    <!-- rotate() -->
+    <div class="m-2">this is rotate</div>
+    <!-- scaleX() -->
+    <div class="m-3">this is scaling in X direction</div>
+    <!-- scaleY() -->
+    <div class="m-4">this is scaling in Y direction</div>
+    <!-- scale() -->
+    <div class="m-5">this is scaling in X and Y direction</div>
+    <!-- skewX() -->
+    <div class="m-6">this is skew in X direction</div>
+    <!-- skewY() -->
+    <div class="m-7">this is skew in Y direction</div>
+    <!-- skew() -->
+    <div class="m-8">this is skew in X and Y direction</div>
+    <!-- matrix() -->
+    <div class="m-9">this is use of matrix</div>
+  </body>
+</html>
